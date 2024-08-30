@@ -69,6 +69,7 @@ nav ul li {
     display: inline;
     padding: 10px 20px;
 }
+
 footer {
     background: #3B67BE;
     text-align: center;
@@ -83,3 +84,4 @@ footer {
     justify-content: space-between;
     width: 50px;
 }
+
