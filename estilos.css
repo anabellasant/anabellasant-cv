@@ -47,6 +47,13 @@ nav ul li {
     display: inline;
     padding: 10px 20px;
 }
-.footer {
-    background-color: #3B67BE;
+
+
+footer {
+    background: #3B67BE;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
