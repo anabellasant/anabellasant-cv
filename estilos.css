@@ -40,7 +40,7 @@ h3{
     top: 0;
     left: 0;
     width: 100%;
-    height: 7%; /* La propiedad height no suele tomar medidas en porcentaje, porque el alto de tu página web puede variar según el contenido. En su lugar, podés usar medidas como pixeles o podés probar con la unidad de medida vh. Vh significa viewport height, que sería altura del dispositivo. Funciona algo así como el porcentaje, tomando como un 100% el alto de la pantalla (por ejemplo, en una pantalla 1920x1080px, 100vh equivaldría a 1080px) */
+    height: 7vh; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,10 +158,6 @@ padding-top: 10px;
 }
 
 .galeria img{
-
-/* Si este height y width que estás aplicando, es para dar un tamaño a las imágenes, en realidad debería estar dado por las imágenes en sí. Osea, tu jpg (o png, etc) debería medir en sí mismo 300x300px. */
-    height: 300px;
-    width: 300px;
     margin: 60px;
     border-radius: 20px;
 }
