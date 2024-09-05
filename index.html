@@ -4,60 +4,69 @@
     <meta charset="UTF-8" />
     <title>Tp de Anabella Santiago</title>
     <link href="estilos.css" rel="stylesheet" types="text/css">
+    <link rel="icon" href="img/icono.svg" type="img/svg+xml" sizes="14x15" alt="favicon_cv_anabellasantiago">
     </head>
 
     <body>
-        <header id="cabecera">
-            <h1>Mi curriculum</h1>
-            <img src="img/logo marca.png" width="30px" height="17px" alt="icono personal">
-        </header>
-        <nav class="botonera">
-            <ul>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Herramientas</a></li>
-                <li><a href="#">Mis trabajos</a></li>
-            </ul>
-        </nav>
-        <main>
-        <section> 
-                <img src="img/mi foto de perfil.jpg" width="428px" height="448px" alt="mifotodeperfil"/>
-        </section>
-        <section>
-                <h2>Sobre mí</h2>
-                <p>¡Hola! Mi nombre es Anabella Santiago, tengo 26 años y soy estudiante de la lic. en Diseño y Comunicación Visual en la UNLa.</p>
-        </section>
-        <section>
-                <h2>Experiencia</h2>
-                <p>Actualmente me encuentro trabajando como Diseñadora Gráfica en una agencia, y de manera freelance como Community Manager.Realizo trabajos de branding, identidad visual, armado de piezas gráficas, entre otros servicios.</p>
-        </section>
-        <section>
-            <h2>Herramientas</h2>
-            <p>Cuento con experiencia en diferentes programas/softwares</p>
-            <div>
+        <header>
+            <nav class="botonera">
+                <div class="logo"><img src="img/logo-marca.png" width="48px" height="21px" alt="icono personal"/>
+                </div>
                 <ul>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Indesign</li>
-                    <li>Figma</li>
-                    <li>Paquete Office</li>
+                    <li><a href="#">Sobre mí</a></li>
+                    <li><a href="#">Experiencia</a></li>
+                    <li><a href="#">Herramientas</a></li>
+                    <li><a href="#">Mis trabajos</a></li>
                 </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Mis trabajos</h2>
-            <img src="img/banners.jpg" width="300px" height="300px" alt="diseño de banner personalizado"/>
-            <img src="img/branding.jpg" width="300px" height="300px" alt="branding y papeleria"/>
-            <img src="img/papeleria.jpg" width="300px" height="300px" alt="diseño de flyers"/>
+            </nav>
+        </header>
+        <main>
+            <div id="banner"></div>
+            <article class="sobremi">
+                    <div class="contenedor-sobremi">
+                    <div class="columnaizq-sobremi">
+                        <h1>//Mi Curriculum</h1>
+                        <p class="subtitulo">¡Hola! Mi nombre es Anabella Santiago, tengo 26 años y soy estudiante de la lic. en Diseño y Comunicación Visual en la UNLa.</p>
+                        </div>
+                    <div class="columnader-sobremi"></div>
+                        <img class="fotoperfil" src="img/foto-de-perfil.jpg" width="428px" height="448px" alt="mifotodeperfil"/>
+                </div>
+            </article>
+            <section class="info">
+                <div class="contenedor-experiencia">
+                    <h2>/Experiencia</h2>
+                    <p>Actualmente me encuentro trabajando como Diseñadora Gráfica en una agencia, y de manera freelance como Community Manager.Realizo trabajos de branding, identidad visual, armado de piezas gráficas, entre otros servicios.</p>
+                </div>
+                <div>
+                    <h2>/Herramientas</h2>
+                    <p>Cuento con experiencia en diferentes programas/softwares</p>
+                <div class="contenedor-programas">
+                    <ul>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Indesign</li>
+                        <li>Figma</li>
+                        <li>Paquete Office</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <section>
+                <h3 class="titulo-galeria">Mis trabajos</h3>
+                <div class="galeria">
+                    <img src="img/banners.jpg" width="300px" height="300px" alt="diseño de banner personalizado"/>
+                    <img src="img/branding.jpg" width="300px" height="300px" alt="branding y papeleria"/>
+                    <img src="img/papeleria.jpg" width="300px" height="300px" alt="diseño de flyers"/>
+                </div>
             </section>
         </main>
     <footer>
-        <section redes="iconos"> <!-- Tanto en footer como en header no se utilizan sections ni articles, sólo div -->
-        <img src="img/logo behance.jpg" width="25px" height="25px" alt="logo behance"/>
-        <img src="img/logo linkedin.jpg" widht="25px" height="25px" alt="logo linkedin"/>
-        <img src="img/logo gmail.jpg" width="25px" height="25px" alt="logo gmail"/>
-        </section>
-    <p>Curriculum Vitae realizado para Computación 3 - Cátedra Wischñevsky - 2024</p>
+        <div class="redes">
+            <img src="img/logo-behance.jpg" width="25px" height="25px" alt="logo behance"/>
+            <img src="img/logo-linkedin.jpg" widht="25px" height="25px" alt="logo linkedin"/>
+            <img src="img/logo-gmail.jpg" width="25px" height="25px" alt="logo gmail"/>
+        </div>
+            <p>Curriculum Vitae realizado para Computación 3 - Cátedra Wischñevsky - 2024</p>
     </footer>
     </body>
 </html>

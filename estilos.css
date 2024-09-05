@@ -8,59 +8,61 @@
     margin:0px;
     padding:0px;
     border: 0px;
+    font-family: "Montserrat";
 }
 
 body {
     background-color: whitesmoke;
-    font-family: "Montserrat";
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 h1 {
-    color: whitesmoke;
-    font-size: 50px;
+    color: rgb(33, 43, 77);
+    font-size: 60px;
     font-family: "Playfair Display", serif;
 }
 h2{
     color: #3B67BE;
-    font-size: 20px;
+    font-size: 40px;
     font-family: "Montserrat Bold"
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
+h3{
+    color: #ffffff;
+    font-size: 20px;
 }
-#cabecera{
-    background-color: #3B67BE;
-    width: 100%;
-    height: 100px;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
+/*BOTONERA*/
+
 .botonera {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50px;
-    padding-top: 10%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
     background-color: #3B67BE;
-    font-family: "Montserrat", sans-serif;
 }
+
 .botonera a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    border-radius: 100px;
+    background-color: #3B67BE;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+
 }
 .botonera a:hover {
-    color: #3B67BE;
-    background-color: #ffffff;
+    background-color: #a1bffc;
 }
-.botonera a:active {
-    background-color: beige;
-    color: black;
+
+.logo {
+    display: flex;
+    margin-left: 30px;
 }
 nav ul {
     list-style: none;
@@ -70,18 +72,115 @@ nav ul li {
     padding: 10px 20px;
 }
 
+/*BANNER*/
+
+#banner{
+    background-image: url("img/banner.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 475px;
+    width: 100%;
+    background-color: #0D1825;
+    padding-top: 100px;
+}
+
+/*SOBRE MI*/
+
+.fotoperfil {
+    border-radius: 50px;
+}
+.sobremi {
+    padding: 50px;
+}
+.contenedor-sobremi {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    height: 500px;
+}
+
+.columnaizq-sobremi {
+    padding: 20px;
+    width: 500px;
+}
+
+.columnader-sobremi {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+
+}
+
+.subtitulo {
+    padding-top: 15px;
+    height: 10%;
+}
+
+/*INFORMACION*/
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    background-color: bisque;
+    height: 300px;
+}
+
+.contenedor-experiencia {
+    padding: 30px;
+    width: 30%;
+}
+.contenedor-programas {
+    padding: 35p;
+    max-width: 40%;
+}
+
+/*GALERIA*/
+
+.titulo-galeria {
+background-color: #3B67BE;
+color: white;
+display: flex;
+justify-content: center;
+height: 40px;
+padding-top: 10px;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #020d24;
+    padding: 10px;
+    gap: 60px;
+}
+
+.galeria img{
+    height: 300px;
+    width: 300px;
+    margin: 60px;
+    border-radius: 20px;
+}
+
+/*FOOTER*/
+
 footer {
-    background: #3B67BE;
+    background: #000000;
+    color: white;
     text-align: center;
-    height: 50px;
+    height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .redes{
     display: flex;
     justify-content: space-between;
-    width: 50px;
+    width: 100px;
+    border-radius: 20px;
 }
 
