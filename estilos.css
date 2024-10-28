@@ -21,7 +21,7 @@ body {
 h1 {
     color: rgb(33, 43, 77);
     font-size: 60px;
-    font-family: "Playfair Display", serif;
+    font-family: "Monsterrat Bold", serif;
 }
 h2{
     color: #3B67BE;
@@ -182,3 +182,53 @@ footer {
     border-radius: 20px;
 }
 
+/*PORTADA*/
+.portada {
+    background-image: url(img/portada-inicio.png);
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.portada-div h1 {
+    font-family: Montserrat;
+    font-size: 180px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 148px;
+    color: var(--white, #FFF);
+    text-align: center;
+}
+
+.portada-div h2 {
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--white, #FFF);
+    text-align: center;
+}
+
+.portada-div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 60px;
+}
+
+.boton-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 15px;
+    gap: 60px;
+    border-radius: 24px;
+    background: var(--white, #FFF);
+}
