@@ -30,7 +30,13 @@ h2{
 h3{
     color: #ffffff;
     font-size: 20px;
+    
 }
+
+h4{
+    color: #ffffff;
+    font-size: 15px;}
+
 
 p{
     font-size: 20px;
@@ -163,26 +169,50 @@ nav ul li {
 /*GALERIA*/
 
 .titulo-galeria {
-background-color: #3B67BE;
-color: white;
-display: flex;
-justify-content: center;
-height: 40px;
-padding-top: 10px;
+    color: var(--Black, #2D2D2D);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px; /* 131.25% */
 }
 
-.galeria{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #020d24;
-    padding: 10px;
-    gap: 60px;
+.estructura-galeria {
+    display:grid;
+    justify-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.galeria img{
-    margin: 60px;
-    border-radius: 20px;
+.grid-imagenes {
+    display: grid;
+    grid-template: auto / repeat(3,1fr);
+    gap: 5%;
+    width: 1080px;
+    height: 874px;
+}
+
+.grid-imagenes h3 {
+    color: var(--Black, #2D2D2D);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+}
+
+.grid-imagenes p {
+    color: var(--Black, #2D2D2D);
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 158.824% */
+}
+
+.grid-imagenes ul {
+    list-style: none;
 }
 
 /*FOOTER*/
@@ -191,18 +221,20 @@ footer {
     background: #000000;
     color: white;
     text-align: center;
-    height: 60px;
+    height: 108px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 15px;
+    font-family: 'Monsterrat', sans-serif;
 }
+
+
 
 .redes{
     display: flex;
     justify-content: space-between;
-    width: 100px;
+    width: 80px;
     border-radius: 20px;
 }
 
