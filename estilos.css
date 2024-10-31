@@ -1,7 +1,6 @@
 @charset "u tf8";
 /*CSS Document*/
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 *{
@@ -21,15 +20,19 @@ body {
 h1 {
     color: rgb(33, 43, 77);
     font-size: 60px;
-    font-family: "Monsterrat Bold", serif;
+    font-family: "Monsterrat", serif;
 }
 h2{
     color: #3B67BE;
     font-size: 40px;
-    font-family: "Montserrat Bold"
+    font-family: "Montserrat";
 }
 h3{
     color: #ffffff;
+    font-size: 20px;
+}
+
+p{
     font-size: 20px;
 }
 
@@ -46,6 +49,7 @@ h3{
     align-items: center;
     box-sizing: border-box;
     background-color: #3B67BE;
+    padding: 33px 110px;
 }
 
 .botonera a {
@@ -75,13 +79,12 @@ nav ul li {
 
 #banner{
     background-image: url("img/banner.jpg");
-    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 475px;
     width: 100%;
     background-color: #0D1825;
-    padding-top: 100px;
+    padding: 76px 0px;
 }
 
 /*SOBRE MI*/
@@ -96,8 +99,9 @@ nav ul li {
     display:flex;
     align-items: center;
     justify-content: center;
-    column-gap: 10px;
-    height: 500px;
+    column-gap: 274px;
+    height: 708px;
+    background-image: url(img/fondo-sobre-mi.png)
 }
 
 .columnaizq-sobremi {
@@ -105,10 +109,26 @@ nav ul li {
     width: 500px;
 }
 
+.boton-formulario {
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #3B67BE;
+    color: #FFFFFF;
+    width: 300px;
+    height: 76px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 38px;
+
+}
+
+
 .columnader-sobremi {
     display: flex;
     flex-direction: column;
-    padding-right: 30px;
+    padding-right: 300px;
 
 }
 
@@ -120,21 +140,25 @@ nav ul li {
 /*INFORMACION*/
 .info {
     display: flex;
-    align-items: center;
+    padding: 100px 0px;
+    flex-direction: column;
     justify-content: center;
-    column-gap: 40px;
-    background-color: bisque;
-    height: 300px;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: white;
 }
 
 .contenedor-experiencia {
-    padding: 30px;
-    width: 30%;
+    display: flex;
+    padding: 100px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
 }
-.contenedor-programas {
-    padding: 35px;
-    max-width: 40%;
-}
+
 
 /*GALERIA*/
 
@@ -182,9 +206,8 @@ footer {
     border-radius: 20px;
 }
 
-/*PORTADA*/
+/*PORTADA INDEX*/
 .portada {
-    background-image: url(img/portada-inicio.png);
     display: flex;
     width: 1920px;
     height: 1080px;
@@ -192,6 +215,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 60px;
+    background-color: #3B67BE;
 }
 
 .portada-div h1 {
@@ -232,3 +256,56 @@ gap: 60px;
     border-radius: 24px;
     background: var(--white, #FFF);
 }
+
+
+.slider {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    gap: 60px;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display:flex;
+    animation:scroll 40s infinite linear;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(o);
+        transform: translateX(o);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(o);
+    }
+}
+
+/*iconos*/
+
+.icons {
+    animation: girar 3s infinite linear;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
