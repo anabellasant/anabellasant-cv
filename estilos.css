@@ -42,6 +42,10 @@ p{
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+    }
+
 /*BOTONERA*/
 
 .botonera {
@@ -215,6 +219,68 @@ nav ul li {
     list-style: none;
 }
 
+/*GALERIA INDIVIDUAL*/
+
+.flecha-back {
+    display: flex;
+    padding: 21px 38px;
+    gap: 10px;
+    margin-right: 80%;
+}
+
+#body-galeria {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5ece3;
+}
+
+.info-galeria{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#footer-galeria {
+    margin-top: auto;
+}
+
+.img-galeria:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+p.subtitulo-galeria {
+    font-size: 20px;
+    color: black;
+    width: 400px;
+    margin-bottom: 200px;
+}
+
+
+/*ASIDE*/
+.aside-redes {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	background-color: black; 
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 70;
+}
+
+.aside-redes a {
+	margin-top: 5px;
+}
+
+.icon {
+	width: 23px;
+	height: 23px;
+}
+
 /*FOOTER*/
 
 footer {
@@ -248,6 +314,7 @@ footer {
     align-items: center;
     gap: 60px;
     background-color: #3B67BE;
+    background-image: url(img/portada-inicio.png)
 }
 
 .portada-div h1 {
@@ -341,3 +408,75 @@ gap: 60px;
     }
 }
 
+/*FORMULARIO*/
+
+
+form {
+    display: flex;
+    width: 554px;
+    height: 454px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 23px;
+    flex-shrink: 0;
+    margin-bottom: 100px;
+}
+
+label {
+    display: block;
+    height: 25px; 
+    color: var(--Azul, #3B67BE);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+
+.formulario {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+textarea {
+    border: 3px solid var(--Azul, #3B67BE);
+    background: var(--white, #FFF);
+    width: 554px;
+    height: 217px;
+    border-radius: 15px;
+}
+
+input {
+    width: 554px;
+    height: 56px;
+    border-radius: 10px;
+    border: 3px solid var(--Azul, #3B67BE);
+    background: var(--white, #FFF);
+    padding: 10px;
+}
+
+.boton-form{
+    background-color: #3B67BE;
+    color: white;
+    width: 190px;
+    height: 43px;
+    border-radius: 50px;
+}
+
+.info-contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.flecha {
+    width: 125px;
+    height: 73px;
+    flex-shrink: 0;
+    margin-top: 100px;
+    margin-right: 1200px;
+}
