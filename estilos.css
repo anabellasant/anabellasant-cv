@@ -147,6 +147,7 @@ nav ul li {
     height: 10%;
 }
 
+
 /*INFORMACION*/
 .info {
     display: flex;
@@ -218,6 +219,25 @@ nav ul li {
 .grid-imagenes ul {
     list-style: none;
 }
+
+
+.titulo-grid {
+    color: var(--Black, #2D2D2D);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.texto-grid {
+    color: var(--Black, #2D2D2D);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    gap: 10px;
+}
+
+
 
 /*GALERIA INDIVIDUAL*/
 
@@ -337,11 +357,11 @@ footer {
 }
 
 .portada-div{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
 
 .boton-portfolio {
@@ -485,6 +505,98 @@ input {
     margin-right: 1200px;
 }
 
+/*CONOCEME*/
+
+.section {
+    margin: 0;
+    max-width: 70rem;
+    width: 100%;
+}
+
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%px;
+    gap: 20px;
+    border-radius: 24px;
+}
+
+.grilla-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 1071px;
+    gap: 26px;
+    border-radius:24px;
+    padding: 200px;
+    text-align: center;
+}
+
+
+.intro .grilla {
+    background-color: white;
+    border-radius: 24px;
+    padding: 200px;
+    align-items: center;
+}
+
+.grilla-texto {
+    gap: 15px;
+    line-height: normal;
+    grid-column-end: span 8;
+}
+
+.img-conoceme {
+    border-radius: 20px;
+    grid-column-end: span 6;
+}
+
+.titulo-grid {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    color: var(--white, #000000);
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+.texto-grid{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--white, #000000);
+    text-align: left;
+    padding-top: 15px;
+}
+
+.signo {
+    margin: 10px;
+    padding: 5px;
+}
+
+.tarjeta {
+    grid-column-end: span 4;
+    text-align: center;
+    padding: 20px;
+    padding-top: 60px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: var(---sombra) 0 0 2em;
+}
+
+.img-tarjetas {
+    border-radius: 20px;
+}
+
+.audio {
+    margin-top: 40px;
+    width: 200px;
+}
+
+
+
 /* MEDIA QUERY 600PX */
 @media (max-width: 600px) {
 
@@ -512,7 +624,7 @@ input {
         margin: 0;
     }
 
-    /* Ajuste de .sobremi para dispositivos pequeños */
+    /*SOBREMI*/
     .sobremi {
         padding: 20px;
         flex-direction: column;
@@ -538,6 +650,7 @@ input {
         width: 100%;
         font-size: 20px;
         height: 60px;
+        margin-bottom: 20px;
     }
 
     .columnader-sobremi {
@@ -547,15 +660,14 @@ input {
         width: 300px;
     }
 
-    /* Ajustes de .info */
     .info, .contenedor-experiencia {
         padding: 50px 0;
         gap: 5px;
     }
 
-
-
-
-
-    footer { flex-direction: column; height: auto; padding: 20px; }
+    footer { 
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px; 
+    }
 }
